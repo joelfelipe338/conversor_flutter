@@ -27,16 +27,16 @@ class CurrencyBox extends StatelessWidget {
                   height: 1,
                   color: Colors.amber,
                 ),
-                items: items.map((e) => DropdownMenuItem(child: Text(e.name), value: e)).toList(),
+                items: items.map((e) => DropdownMenuItem(value: e, child: Text(e.name))).toList(),
                 onChanged: onChanged),
           ),
         ),
-        SizedBox(width: 10,),
+        const SizedBox(width: 10,),
         Expanded(
           flex: 2,
           child: TextField(
             controller: controller,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
                 enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
                 focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.amber))
             ),

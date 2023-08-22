@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 
-main () {
+void main () {
   final TextEditingController toText = TextEditingController();
   final TextEditingController fromText = TextEditingController();
   final homeController = HomeController(toText: toText, fromText: fromText);

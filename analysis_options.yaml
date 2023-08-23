@@ -36,6 +36,12 @@ linter:
     prefer_final_locals: true
     avoid_unused_constructor_parameters: true
     always_declare_return_types: true
+    no_self_assignments: true # Function(int x) : x = x;
+    unrelated_type_equality_checks: true # BAD => 1 == '1'
+    camel_case_types: true # CamelCase in Classes
+    file_names: true
+    prefer_contains: true # List.contains()
+    prefer_is_empty: true # List.isEmpty
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
